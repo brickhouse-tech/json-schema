@@ -1,10 +1,14 @@
 {
-  "name": "json-schema",
-  "version": "0.4.1-lts.0",
+  "name": "@brickhouse-tech/json-schema-lts",
+  "version": "0.4.1-0",
   "author": "Kris Zyp",
   "description": "JSON Schema validation and specifications",
-  "maintainers":[
-  	{"name": "Kris Zyp", "email": "kriszyp@gmail.com"}],
+  "maintainers": [
+    {
+      "name": "Brickhouse Tech",
+      "email": "zbricktarz@gmail.com"
+    }
+  ],
   "keywords": [
     "json",
     "schema"
@@ -14,11 +18,20 @@
   ],
   "license": "(AFL-2.1 OR BSD-3-Clause)",
   "repository": {
-    "type":"git",
-    "url":"http://github.com/kriszyp/json-schema"
+    "type": "git",
+    "url": "https://github.com/brickhouse-tech/json-schema.git"
   },
-  "directories": { "lib": "./lib" },
+  "directories": {
+    "lib": "./lib"
+  },
   "main": "./lib/validate.js",
-  "devDependencies": { "vows": "*", "@eslint/js": "^9.0.0", "eslint": "^9.0.0" },
-  "scripts": { "test": "vows --spec test/*.js", "lint": "eslint lib/ test/" }
+  "devDependencies": {
+    "vows": "*",
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0"
+  },
+  "scripts": {
+    "test": "vows --spec test/*.js",
+    "lint": "eslint lib/ test/"
+  }
 }
