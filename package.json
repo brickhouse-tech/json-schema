@@ -30,6 +30,9 @@
     "@eslint/js": "^9.0.0",
     "eslint": "^9.0.0"
   },
+  "overrides": {
+    "ajv": "8.18.0"
+  },
   "scripts": {
     "test": "vows --spec test/*.js",
     "lint": "eslint lib/ test/"
