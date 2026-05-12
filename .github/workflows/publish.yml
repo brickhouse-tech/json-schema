@@ -5,9 +5,9 @@ on:
       - "v*"
 jobs:
   tests:
-    uses: brickhouse-tech/.github/.github/workflows/tests.yml@main
+    uses: brickhouse-tech/.github/.github/workflows/tests.yml@3c0bca8e1e161a6f61aee72413611b6fca239974  # main, pinned vs tag-rewrite
     with:
       node-versions: '["20.x"]'
   publish:
     needs: [tests]
-    uses: brickhouse-tech/.github/.github/workflows/publish.yml@main
+    uses: brickhouse-tech/.github/.github/workflows/publish.yml@3c0bca8e1e161a6f61aee72413611b6fca239974  # main, pinned vs tag-rewrite
