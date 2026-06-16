@@ -1,6 +1,6 @@
 {
   "name": "@brickhouse-tech/json-schema-lts",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "author": "Kris Zyp",
   "description": "JSON Schema validation and specifications",
   "maintainers": [

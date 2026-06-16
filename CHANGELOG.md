@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.4.6](https://github.com/brickhouse-tech/json-schema/compare/v0.4.5...v0.4.6) (2026-06-16)
+
 ## [0.4.5](https://github.com/brickhouse-tech/json-schema/compare/v0.4.4...v0.4.5) (2026-05-13)
 
 ## [0.4.4](https://github.com/brickhouse-tech/json-schema/compare/v0.4.3...v0.4.4) (2026-04-04)
