@@ -1,4 +1,4 @@
-name: CI
+name: ci
 
 on:
   push:
@@ -12,3 +12,21 @@ jobs:
     with:
       node-versions: '["18.x", "20.x", "22.x"]'
       lint: true
+
+  # Aggregate gate — single stable required check `gate` (see brickhouse-tech/github-ops).
+  gate:
+    name: gate
+    needs: [tests]
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - name: Check job results
+        run: |
+          results=($(echo '${{ toJSON(needs.*.result) }}' | jq -r '.[]'))
+          for r in "${results[@]}"; do
+            if [[ "$r" != "success" ]]; then
+              echo "One or more jobs failed: $r"
+              exit 1
+            fi
+          done
+          echo "All jobs passed"
